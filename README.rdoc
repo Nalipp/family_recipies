@@ -1,3 +1,18 @@
+Associations:
+
+Chef    --has_many--> Recipe
+  chefname
+  email
+
+Recipe  <--belongs_to-- Chef
+  name
+  summary
+  description
+  chef_id (foregin_key)
+
+
+Tests:
+
 testing specs for recipes:
 name: string
 summary: text
